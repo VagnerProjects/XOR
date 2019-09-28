@@ -174,7 +174,7 @@ class Construtor
     {
         for(int i = 0; i <= 20;i++)
         {
-          System.out.println("\b\b\r\r\n");
+          System.out.println("\n\n\n\n\n");
         }
     }
 }

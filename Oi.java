@@ -6,9 +6,7 @@
 package ola;
 
 
-import java.util.Scanner;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.io.*;
 import java.util.*;
 

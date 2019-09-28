@@ -209,12 +209,12 @@ namespace CriptoCadastros
                     //Libera espaço de memória para um texto claro
                     var stream = new MemoryStream();
 
-                    //A difreneça aqui é que executa uma decriptação no espaço de memória
-                    var Encriptar = new CryptoStream(stream, Crypt.CreateDecryptor(AES_KEY, AES_IV),
+                    //A diferença aqui é que executa uma decriptação no espaço de memória
+                    var Decriptar = new CryptoStream(stream, Crypt.CreateDecryptor(AES_KEY, AES_IV),
                         CryptoStreamMode.Write);
 
-                    Encriptar.Write(AES_VALUE, 0, AES_VALUE.Length);
-                    Encriptar.FlushFinalBlock();
+                    Decriptar.Write(AES_VALUE, 0, AES_VALUE.Length);
+                    Decriptar.FlushFinalBlock();
 
 
                     //Especifica o tipo de dados que deve ser transformado o texto cifrado

@@ -35,7 +35,7 @@ public class Oi
         
         if(escolha == 1)
         {
-            while(res.toUpperCase() == "S")
+            while(res == "S")
             {
                  object.clear();
                 System.out.println("Cadastro usario: "+(i+1)+"\n");

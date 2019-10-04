@@ -24,7 +24,7 @@ int main()
 
 	int quant;
 
-	//Ponteiro para a pilha, o tipo T agora È String
+	//Ponteiro para a pilha, o tipo T agora √© String
 	pilha<string>*stacks = new pilha<string>;
 
 	//Inicia a pilha
@@ -36,18 +36,18 @@ int main()
 
 	cin.ignore();
 
-	//Quantidade n„o pode chegar ao limite da pilha
+	//Quantidade n√£o pode chegar ao limite da pilha
 	if (quant < 999)
 	{
 		int insert,query;
 		string in, querys;
 		
 
-		//Adiciona elementos na pilha atÈ a quantidade especificada
+		//Adiciona elementos na pilha at√© a quantidade especificada
 		for (int i = 0; i < quant; i++)
 		{
 			system("cls");
-			printf("%d∞ elemento: ", (i + 1));
+			printf("%d¬∞ elemento: ", (i + 1));
 			getline(cin, in);
 		
 
@@ -64,25 +64,22 @@ int main()
 		//Mostra todos os elementos da pilha, removendo quem esta no topo
 		for (int i = 0; i < quant; i++)
 		{
-			//O endereÁo da variavel È adiconada ao ponteiro da funÁ„o 'pop'
+			//O endere√ßo da variavel √© adiconada ao ponteiro da fun√ß√£o 'pop'
 			stacks->pop(&querys);
 
 			//A varivel agora tem acesso aos elementos
-			cout<<(i+1)<<"∞elemento: "<<querys<<endl;
+			cout<<(i+1)<<"¬∞elemento: "<<querys<<endl;
 		}
 		printf("\n\n");
-		int a;
-		printf("Remova: ");
-		scanf_s(" %d", &a);
-		stacks->remove(a);
+		
 		querys = "";
 		for (int i = 0; i < quant; i++)
 		{
-			//O endereÁo da variavel È adiconada ao ponteiro da funÁ„o 'pop'
+			//O endere√ßo da variavel √© adiconada ao ponteiro da fun√ß√£o 'pop'
 			stacks->pop(&querys);
 
 			//A varivel agora tem acesso aos elementos
-			cout << (i + 1) << "∞elemento: " << querys << endl;
+			cout << (i + 1) << "¬∞elemento: " << querys << endl;
 		}
 	}
 	else
@@ -90,7 +87,7 @@ int main()
 		printf("Valor muito grande para a pilha !\n");
 	}
 
-    //Libera o espaÁo de memÛria usado pelo ponteiro (alocaÁ„o din‚mica de memÛria, em C È o free)
+    //Libera o espa√ßo de mem√≥ria usado pelo ponteiro (aloca√ß√£o din√¢mica de mem√≥ria, em C √© o free)
 	delete stacks;
 	
 

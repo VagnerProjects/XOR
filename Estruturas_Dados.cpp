@@ -72,15 +72,7 @@ int main()
 		}
 		printf("\n\n");
 		
-		querys = "";
-		for (int i = 0; i < quant; i++)
-		{
-			//O endereço da variavel é adiconada ao ponteiro da função 'pop'
-			stacks->pop(&querys);
-
-			//A varivel agora tem acesso aos elementos
-			cout << (i + 1) << "°elemento: " << querys << endl;
-		}
+		
 	}
 	else
 	{
